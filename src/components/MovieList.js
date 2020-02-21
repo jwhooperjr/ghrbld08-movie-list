@@ -1,15 +1,21 @@
+import React from 'react';
 import MovieListEntry from './MovieListEntry.js';
 
-var MovieList = ( movies ) => (
-    <div className="movie-list">
-    {movies.map((movie, index) => (
-      <MovieListEntry/>
-    ))}
-  </div>
-);
+var MovieList = ( props ) => {
+    console.log(props);
+    return (
+    <div>
+        {props.list.map((movie, index) => (
+        <MovieListEntry
+         movie={props.list[index].title}
+         />
+        ))}
+    </div>
+    )
+};
 
-VideoList.propTypes = {
-    movies: PropTypes.array.isRequired
-  };
+// MovieList.propTypes = {
+//     movies: PropTypes.array.isRequired
+//   };
 
   export default MovieList;
