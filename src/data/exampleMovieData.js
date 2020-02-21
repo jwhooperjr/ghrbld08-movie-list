@@ -5,3 +5,5 @@ var exampleMovieData = [
     {title: 'Sunshine'},
     {title: 'Ex Machina'},
   ];
+
+export default exampleMovieData;
