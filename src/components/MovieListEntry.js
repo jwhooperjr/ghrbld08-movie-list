@@ -1,9 +1,12 @@
-var MovieListEntry = ( movie ) => (
-  <div className="movie-list-entry">{movie}</div>
+import React from 'react';
+var MovieListEntry = ( props ) => (
+  <div>
+      {props.movie}
+  </div>
 );
 
-VideoListEntry.propTypes = {
-    movie: PropTypes.object.isRequired
-  };
+// MovieListEntry.propTypes = {
+//     movie: PropTypes.object.isRequired
+//   };
 
   export default MovieListEntry;
